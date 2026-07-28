@@ -15,7 +15,7 @@
 
   <p>Update the first child component from the parent:</p>
   <input type="text" [(ngModel)]="var1">
-  
+
   <p>Update the second child component from the parent:</p>
   <input type="text" [(ngModel)]="var2">
 
@@ -23,8 +23,8 @@
     <p>TODO: Update both child components to take in todoData from the parent:</p>
     <input type="text" [(ngModel)]="todoData">
 
-    <app-child [dataFromParent]="var1"></app-child>
-    <app-child [dataFromParent]="var2"></app-child>
+    <app-child [dataFromParent]="var1" [todoData] = "todoData"></app-child>
+    <app-child [dataFromParent]="var2" [todoData] = "todoData"></app-child>
   </div>
 
 </div>
